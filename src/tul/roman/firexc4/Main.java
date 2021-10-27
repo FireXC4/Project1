@@ -19,6 +19,8 @@ public class Main {
         // P13();
 
         //19
+        // P19();
+
         //20
     }
     public static void P7(){
@@ -95,5 +97,22 @@ public class Main {
 
             loop = sc.nextLine();
         }
+    }
+
+    public static void P19(){
+        Scanner sc = new Scanner(System.in);
+        Short input = sc.nextShort();
+        Double g = 1.0;
+
+        for(Short i = 1;i < input+1; i++) {
+            g = g * i;
+
+            /*
+            Při větším úkonu než 10! přeteče Integer je potřebavyřešit tenhle porblém pomocí nečeho?
+            Double by mohl fungovat
+             */
+
+        }
+        System.out.println(g);
     }
 }
